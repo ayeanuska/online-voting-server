@@ -154,7 +154,7 @@ export const googleAuthCallback = async (
 
         let user = await User.findOne({ email });
 
-        if (!user) {
+        if (!user) 
             user = await User.create({
                 fullName,
                 email,
